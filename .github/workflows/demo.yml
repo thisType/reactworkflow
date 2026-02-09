@@ -11,7 +11,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: node-${{ hashFiles('**/package-lock.json') }}
       - name: Get code
         uses: actions/checkout@v3
       - name: Install dependencies
@@ -28,7 +28,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: node-${{ hashFiles('**/package-lock.json') }}
       - name: Get code
         uses: actions/checkout@v3
       - name: Install dependencies
